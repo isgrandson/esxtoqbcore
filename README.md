@@ -1,20 +1,18 @@
 # ESX TO QBCORE / QBCORE TO ESX
 
-Client Side:
-
 esx:onPlayerDeath -> hospital:server:SetDeathStatus
 
 esx:playerLoaded -> QBCore:Client:OnPlayerLoaded
 
 esx:showAdvancedNotification -> QBCore:Notify
 
-esx:showHelpNotification -> QBCore:Notify
+esx:showHelpNotification/ESX.ShowHelpNotification -> QBCore:Notify
 
-esx:showNotification -> QBCore:Notify
+esx:showNotification/ESX.ShowNotification -> QBCore:Notify
 
 ESX.GetPlayerData -> QBCore.Functions.GetPlayerData
 
-ESX.IsPlayerLoaded -> None
+ESX.IsPlayerLoaded -> //
 
 ESX.SetPlayerData -> QBCore:Player:SetPlayerData
 
